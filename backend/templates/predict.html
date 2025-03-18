@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+ 
+{% block content %}
+
+<form id="predictionForm" class="mb-4">
+    <h2>Input Soil Parameters</h2>
+    <div class="form-group">
+        <label for="nitrogen">Nitrogen (N):</label>
+        <input type="number" id="nitrogen" class="form-control" placeholder="Enter Nitrogen value">
+    </div>
+    <div class="form-group">
+        <label for="phosphorus">Phosphorus (P):</label>
+        <input type="number" id="phosphorus" class="form-control" placeholder="Enter Phosphorus value">
+    </div>
+    <div class="form-group">
+        <label for="potassium">Potassium (K):</label>
+        <input type="number" id="potassium" class="form-control" placeholder="Enter Potassium value">
+    </div>
+    <div class="form-group">
+        <label for="temperature">Temperature (°C):</label>
+        <input type="number" id="temperature" class="form-control" placeholder="Enter Temperature">
+    </div>
+    <div class="form-group">
+        <label for="ph">pH Value:</label>
+        <input type="number" id="ph" class="form-control" step="0.1" placeholder="Enter pH value">
+    </div>
+    <div class="form-group">
+        <label for="rainfall">Rainfall (mm):</label>
+        <input type="number" id="rainfall" class="form-control" placeholder="Enter Rainfall">
+    </div>
+    <button type="button" class="btn btn-success" onclick="predictCrop()">Predict Crop</button>
+</form>
+
+<div id="result" class="alert alert-info" style="display: none;"></div>
+<div id="recommendation" class="alert alert-success" style="display: none;"></div>
+
+{% endblock %}
