@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- <h2>About This Project</h2>
+<p>This project leverages IoT and Machine Learning to analyze soil conditions and predict the most suitable crop for a given set of soil parameters. By using real-time data from sensors and advanced machine learning models, this application helps farmers and agriculturists make informed decisions, improving crop yield and sustainability.</p>
+<br><br> -->
+
+<div class="about-container">
+    <h2>About This Project</h2>
+    <p>This project leverages IoT and Machine Learning to analyze soil conditions and predict the most suitable crop for a given set of soil parameters. By using real-time data from sensors and advanced machine learning models, this application helps farmers and agriculturists make informed decisions, improving crop yield and sustainability.</p>
+    <br>
+
+    <h2>About Project Team Guide</h2>
+    <div class="team-guide">
+        <!-- Team Guide -->
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/GuideProfile.jpg') }}" alt="Team Guide">
+            <div class="member-info">
+                <p><strong>Name:</strong> Mrs. Ashwini B <br> Guide and Assistant Professor</p>
+                <!-- <p><strong>USN:</strong> 4SU21IS051</p> -->
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h2>About Project Team</h2>
+    <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/ProfilePhoto.jpg') }}" alt="Team Member 1">
+            <div class="member-info">
+                <p><strong>Name:</strong> Nikhil Y S</p>
+                <p><strong>USN:</strong> 4SU21IS051</p>
+            </div>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/ProfilePhoto2.jpg') }}" alt="Team Member 2">
+            <div class="member-info">
+                <p><strong>Name:</strong> H N Shreyas</p>
+                <p><strong>USN:</strong> 4SU21IS052</p>
+            </div>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/ProfilePhoto3.jpg') }}" alt="Team Member 3">
+            <div class="member-info">
+                <p><strong>Name:</strong> Prajwal T H</p>
+                <p><strong>USN:</strong> 4SU21IS054</p>
+            </div>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <img src="{{ url_for('static', filename='images/ProfilePhoto4.jpg') }}" alt="Team Member 4">
+            <div class="member-info">
+                <p><strong>Name:</strong> Varun M</p>
+                <p><strong>USN:</strong> 4SU21IS056</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
